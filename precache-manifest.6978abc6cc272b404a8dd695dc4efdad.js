@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16285b34c4bbb7ecfa3e014f6d1a6f93",
+    "revision": "a0bc2c127bdbb78272bc7dcf77dc5cc1",
     "url": "/whatsapp-helper-app/index.html"
   },
   {
