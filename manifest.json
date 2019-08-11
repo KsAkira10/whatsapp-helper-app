@@ -1,0 +1,15 @@
+{
+  "short_name": "Whatsapp Helper",
+  "name": "Whatsapp Helper",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }    
+  ],
+  "start_url": "/whatsapp-helper-app/",
+  "display": "standalone",
+  "theme_color": "#01E675",
+  "background_color": "#01E675"
+}
