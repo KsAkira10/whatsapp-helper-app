@@ -15,7 +15,7 @@
     "react-scripts": "3.1.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "NODE_ENV=production npm run build",
     "deploy": "npx gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
