@@ -2,12 +2,21 @@
   "name": "whatsapp-helper-app",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:KsAkira10/whatsapp-helper-app.git"
+  },
+  "homepage": "https://ksakira10.github.io/whatsapp-helper-app/",
   "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "bootstrap": "^4.3.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

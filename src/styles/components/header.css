@@ -1,0 +1,5 @@
+.header {
+  background-color: #1ebea5;
+  transition: background-color .5s;
+  max-height: 61px;
+}
