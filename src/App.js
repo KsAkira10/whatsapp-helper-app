@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { isMobile } from './utils';
 import Header from './components/Header';
 import Frame from './components/Frame';
 
@@ -18,10 +19,8 @@ function App() {
 
     if (regex.test(value)) {
       setDisabledSubmit(false);
-      // setGenerated(true);
     } else {
       setDisabledSubmit(true);
-      // setGenerated(false);
     }
   };
   const textHandleChange = ({ target }) => {
@@ -39,7 +38,11 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const formatted = phone.replace(/[^0-9]/g, '');
-    setFrame(<Frame phone={formatted} text={text} />);
+    if (isMobile()) {
+      setFrame(<Frame phone={formatted} text={text} host="whatsapp:/" />);
+    } else {
+      setFrame(<Frame phone={formatted} text={text} host="https://web.whatsapp.com" />);
+    }
     setGenerated(true);
   };
 
@@ -51,6 +54,7 @@ function App() {
       setWaLink('#');
     }
   }, [frame]);
+
   return (
     <>
       <Header />
