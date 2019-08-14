@@ -46,6 +46,16 @@ function App() {
     setGenerated(true);
   };
 
+  const handleLinkClick = () => {
+    setPhone('');
+    setText('');
+    setGenerated(false);
+    setShowTextarea(false);
+    setDisabledSubmit(true);
+    setFrame(<></>);
+    setWaLink('#');
+  }
+
   React.useEffect(() => {
     const iframe = document.querySelector('#luncher');
     if (iframe) {
@@ -77,7 +87,7 @@ function App() {
                 </div>
 
                 <div className="form-group text-center">
-                  {generated ? <a href={waLink} className="btn btn-primary btn-lg">ENVIAR MENSAGEM</a> : <input className="btn btn-primary btn-lg" type="submit" value="GERAR LINK" disabled={disabledSubmit} />}
+                  {generated ? <a href={waLink} className="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>ENVIAR MENSAGEM</a> : <input className="btn btn-primary btn-lg" type="submit" value="GERAR LINK" disabled={disabledSubmit} />}
                 </div>
               </form>
             </div>
