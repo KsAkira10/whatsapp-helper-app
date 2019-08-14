@@ -5091,6 +5091,11 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
+ismobilejs@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ismobilejs/-/ismobilejs-1.0.1.tgz#28fe7576fd205b221e18bbab26db89a50f247e3c"
+  integrity sha512-tA31o18HqUT9V2Hjy3sQeStQL70U+VRlDmRridzqglt1p59Stz+HJEhYHUynJdQtx+sgUrvHTdiA+Z0IbDi3qw==
+
 isobject@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-2.1.0.tgz#f065561096a3f1da2ef46272f815c840d87e0c89"

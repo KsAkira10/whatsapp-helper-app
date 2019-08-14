@@ -8,7 +8,7 @@ function Frame(props) {
 
   if (phone.length === 11) {
     return (
-      <iframe title="whatsapp" id="launcher" width="0" height="0" style={iframeStyle} src={`whatsapp://send?${phone ? `phone=55${phone}` : ''}${text ? `&text=${text}` : ''}`}></iframe>
+      <iframe title="whatsapp" id="luncher" width="0" height="0" style={iframeStyle} src={`whatsapp://send?${phone ? `phone=55${phone}` : ''}${text ? `&text=${text}` : ''}`}></iframe>
     );
   }
 
